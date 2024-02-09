@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1> Display teams submissions </h1>
+<ol>
+{% for submission in S1 %}
+<li>{{submission.team_name}} {{challenge.repo_link}} {{submission.design_link}} {{submission.presentation_link}}</li>
+<li>{{submission.team_name}} {{submission.repo_link}} {{submission.design_link}} {{submission.presentation_link}}</li>
+{% endfor %}
+</ol>
+</body>
+</html>
