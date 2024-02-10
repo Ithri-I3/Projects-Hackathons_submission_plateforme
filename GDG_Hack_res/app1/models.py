@@ -18,6 +18,7 @@ class Submission(models.Model):
         return(self.team_name)
 
 
+
 class Judge (models.Model):
     Jfirst_name=models.CharField(max_length=50)
     Jlast_name=models.CharField(max_length=50)

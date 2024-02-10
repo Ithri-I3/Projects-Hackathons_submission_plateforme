@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submission Marks</title>
+</head>
+<body>
+    <h1>Submission Marks</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Team Name</th>
+                <th>Total Marks</th>
+                <th>Average Mark</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for submission_mark in submission_marks %}
+            <tr>
+                <td>{{ submission_mark.submission.team_name }}</td>
+                <td>{{ submission_mark.total_marks }}</td>
+                <td>{{ submission_mark.average_mark }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

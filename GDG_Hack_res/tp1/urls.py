@@ -22,5 +22,5 @@ urlpatterns = [
     path('',include('app1.urls')),
     path('admin/', admin.site.urls),
 
-     path('', RedirectView.as_view(url='/LogIN/'), name='redirect-homepage'),
+     path('', RedirectView.as_view(url='/add_critic/'), name='redirect-homepage'),
 ]
